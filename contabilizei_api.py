@@ -61,7 +61,7 @@ class ContabilizeiApi(object):
         self.login_data = self._post(target_url).json()
         self.headers["strinfs-token"] = self.login_data["token"]
         self.headers["userId"] = self.login_data["userId"]
-        self.verbose_print(self.VERBOSE_NORMAL, "Conectado ao contabilzei.com.br como [{}]".format(email))
+        self.verbose_print(self.VERBOSE_NORMAL, "Conectado ao contabilizei.com.br como [{}]".format(email))
         return self
 
     def get_print(self, url):
